@@ -1,4 +1,5 @@
-import { CMS_NAME } from '../lib/constants'
+import { CMS_NAME } from '../lib/constants';
+import Link from 'next/link'; // Import Link from next/link
 
 const Intro = () => {
   return (
@@ -7,16 +8,15 @@ const Intro = () => {
         ACCELERATION.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        let's learn, build, and grow together with  {' '}
-        <a
-          href="https://nextjs.org/"
-          className="underline hover:text-blue-600 duration-200 transition-colors"
-        >
-          Elijah 
-        </a>
+        let's learn, build, and grow together with {' '}
+        <Link href="/about"> {/* Update this line */}
+          <a className="underline hover:text-blue-600 duration-200 transition-colors">
+            Elijah
+          </a>
+        </Link>
       </h4>
     </section>
   )
 }
 
-export default Intro
+export default Intro;
