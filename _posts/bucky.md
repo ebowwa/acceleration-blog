@@ -1,7 +1,7 @@
 
 ---
-title: 'Life's Journey: Overcoming Adversity and Finding Purpose'
-excerpt: 'An intimate look into the transformative journey of overcoming personal challenges and finding one's place in the universe.'
+title: "Life's Journey: Overcoming Adversity and Finding Purpose"
+excerpt: "An intimate look into the transformative journey of overcoming personal challenges and finding one's place in the universe."
 coverImage: '/assets/blog/life-journey/cover.png'
 date: '2024-01-09'
 author:
