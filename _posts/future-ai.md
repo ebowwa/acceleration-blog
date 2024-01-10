@@ -7,7 +7,7 @@ author:
   name: 'Elijah Arbee'
   picture: '/assets/blog/authors/eli.jpeg'
 ogImage:
-  url: 'public/assets/blog/future-ai/cover.png'
+  url: '/assets/blog/future-ai/cover.png'
 ---
 
 ## The Evolution of Large Language Models and Emerging AI Tools
