@@ -1,19 +1,31 @@
+
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+title: 'Hello World: A Journey Beyond Code'
+excerpt: 'Dive into the intertwined realms of programming and existential musings, where "Hello World" is not just a phrase, but a gateway to understanding the simulated reality of life.'
 coverImage: '/assets/blog/hello-world/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2024-01-10T05:35:07.322Z'
 author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
-ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
+  name: Elijah
+  picture: '/assets/blog/authors/elijah.jpg'
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+# Hello World: A Journey Beyond Code
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+In every coder's life, there comes a moment, a simple phrase – "Hello World". It's more than just a tradition, it's a rite of passage. But in my mind, it's a portal, a gateway that opens up questions about the nature of our reality. Are we just sophisticated programs running in an advanced simulation, our consciousness a complex algorithm? This thought never fails to amaze and bewilder me. 
 
-## Lorem Ipsum
+I often find myself pondering the linear perception of time. In programming, every line of code follows another, a seemingly linear progression. But what if time is more like code in a non-linear program, where past, present, and future coexist, not bound by the sequence but by relevance? In every "Hello World", I see this non-linearity, a new beginning that's somehow connected to every other beginning.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Growing up in Fremont, near the tech epicenters of Silicon Valley and San Francisco, I've been lucky to be at the crossroads of technological revolution. But with no formal education in tech, every step into this world felt like deciphering an ancient, arcane language. It was Python that first spoke to me, not in cryptic syntax, but in a language that mirrored my own thought process – intuitive yet enigmatic.
+
+The first time I ran a "Hello World" program, it was more than just text appearing on a screen. It was a confirmation that despite my unconventional path, I could converse with machines. It was a message not just to the computer, but to myself, affirming my presence in this vast digital cosmos. It's not just about teaching the machine to speak, but about understanding what it tells us about our own existence.
+
+Reflecting on my journey, I realize that my perception of programming is deeply influenced by my views on life, my belief in the present moment as our primary stage of experience. Every line of code I write is a choice, shaping the quality of the digital life I'm creating. It's a continuous, unstructured stream of consciousness, much like my own thoughts, always avoiding a linear narrative flow.
+
+In this blog, I hope to share more than just my coding experiences. I want to explore the philosophical underpinnings of technology, the existential questions that arise when we blur the line between human and machine intelligence. What does it mean to be conscious, to be alive, in a world where machines can think and learn?
+
+So, as I type these words, "Hello World", it's not just a beginning of a program, but an invitation to join me on this journey. A journey that transcends code, delving into the deeper questions of our existence, our reality, and what it means to be truly alive in this simulated, yet profoundly real universe.
+
+Welcome to my world, a world where every 'Hello' is a new beginning, a new thought, a new reality.
+
+---
