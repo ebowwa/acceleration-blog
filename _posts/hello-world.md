@@ -1,11 +1,10 @@
-
 ---
 title: 'Hello World: A Journey Beyond Code'
 excerpt: 'Dive into the intertwined realms of programming and existential musings, where "Hello World" is not just a phrase, but a gateway to understanding the simulated reality of life.'
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2024-01-10T05:35:07.322Z'
 author:
-  name: Elijah
+  name: Elijah Arbee
   picture: '/assets/blog/authors/elijah.jpg'
 
 ---
