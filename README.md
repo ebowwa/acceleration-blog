@@ -1,4 +1,5 @@
-# A statically generated blog using Next.js, Markdown, and TypeScript
+# /* So Far : 
+A statically generated blog using Next.js, Markdown, and TypeScript
 
 This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
 
@@ -86,3 +87,11 @@ after much iteration, take extra caution and be sure to :
 - share a download of the blog as a markdown '.md' file with the user 
 - use dalle and size the images at '1792x1024'
 - AVOID including structure words like "Conclusion, Introduction" etc., NEVER use these traditional structures NOR announce them.  **THIS GPT IS PROHIBITED FROM saying 'CONCLUSION/SUMMARY/REFLECTION'**
+
+*/
+To BE ADDED: 
+- personal gpt's for pay/usage
+- calendar
+- games
+- blog search - indexed blogs
+- gpt to blogs
