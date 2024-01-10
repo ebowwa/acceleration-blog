@@ -1,10 +1,11 @@
+ 
 ---
-title: 'Diving into the Infinite: My Journey with Code and AI'
-excerpt: 'Join me, Elijah, as I navigate the uncharted waters of self-taught programming and AI exploration. Discover my unique perspective on learning, the democratization of knowledge, and the quest for understanding in a world dominated by technology.'
+title: 'Hello World: Echoes from a Simulated Reality'
+excerpt: 'Diving into the rabbit hole of AI, technology, and the nature of our simulated existence. A narrative journey through the eyes of Elijah, a self-taught technologist with a unique perspective on life, learning, and the quest for root control in a seemingly pre-scripted world.'
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2024-01-10T10:00:00.000Z'
 author:
-  name: Elijah Arbee
+  name: Elijah
   picture: '/assets/blog/authors/elijah.jpg'
 ---
 
