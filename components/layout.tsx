@@ -1,4 +1,4 @@
-// import Alert from './alert'
+/* import Alert from './alert' */
 import Footer from './footer'
 import Meta from './meta'
 
@@ -10,13 +10,15 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
- /*     <Meta />
-      <div className="min-h-screen">
-       <Alert />
-        <main>{children}</main>
-      </div>
-      <Footer />
-    </>*/
+      {/*
+        <Meta />
+        <div className="min-h-screen">
+          <Alert />
+          <main>{children}</main>
+        </div>
+        <Footer />
+      */}
+    </>
   )
 }
 
