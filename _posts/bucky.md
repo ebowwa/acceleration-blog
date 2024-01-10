@@ -1,14 +1,13 @@
-
 ---
-title: "Life's Journey: Overcoming Adversity and Finding Purpose"
-excerpt: "An intimate look into the transformative journey of overcoming personal challenges and finding one's place in the universe."
-coverImage: "/assets/blog/life-journey/cover.png"
-date: "2024-01-09"
+title: 'Life's Journey: Overcoming Adversity and Finding Purpose'
+excerpt: 'An intimate look into the transformative journey of overcoming personal challenges and finding one's place in the universe.'
+coverImage: '/assets/blog/life-journey/cover.png'
+date: '2024-01-09'
 author:
-  name: "Elijah Arbee"
-  picture: "/assets/blog/authors/eli.jpeg"
+  name: Elijah Arbee
+  picture: '/assets/blog/authors/eli.jpeg'
 ogImage:
-  url: "/assets/blog/life-journey/cover.png"
+  url: '/assets/blog/life-journey/cover.png'
 ---
 
 ## The Epiphany of Purpose: Buckminster Fuller's Turning Point
@@ -36,3 +35,4 @@ Fuller's story is not just a historical anecdote; it is a timeless lesson in res
 Fuller's journey of overcoming adversity and finding his place in the universe is a powerful example of how personal hardship can lead to a profound understanding of our role in the world and our potential to effect positive change. His life's work and philosophy continue to inspire and remind us of the indomitable spirit of humanity and the transformative power of purpose.
 
 ---
+
