@@ -1,4 +1,3 @@
- 
 ---
 title: 'Hello World: Echoes from a Simulated Reality'
 excerpt: 'Diving into the rabbit hole of AI, technology, and the nature of our simulated existence. A narrative journey through the eyes of Elijah, a self-taught technologist with a unique perspective on life, learning, and the quest for root control in a seemingly pre-scripted world.'
