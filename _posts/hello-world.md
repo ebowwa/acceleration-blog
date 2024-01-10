@@ -1,3 +1,4 @@
+
 ---
 title: 'Diving into the Infinite: My Journey with Code and AI'
 excerpt: 'Join me, Elijah, as I navigate the uncharted waters of self-taught programming and AI exploration. Discover my unique perspective on learning, the democratization of knowledge, and the quest for understanding in a world dominated by technology.'
