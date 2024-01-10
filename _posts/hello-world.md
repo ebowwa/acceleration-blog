@@ -5,7 +5,7 @@ coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2024-01-10T10:00:00.000Z'
 author:
   name: Elijah Arbee
-  picture: '/assets/blog/authors/elijah.jpg'
+  picture: '/assets/blog/authors/eli.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/og.jpg'
 ---
