@@ -8,7 +8,7 @@ const Intro = () => {
         ACCELERATION.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        let's learn, build, and grow together with {' '}
+        let's learn, build, and grow together {' '}
         <Link href="/about"> {/* Update this line */}
           <a className="underline hover:text-blue-600 duration-200 transition-colors">
             Elijah
