@@ -1,7 +1,7 @@
 ---
 title: 'Exploring the Future of AI'
 excerpt: 'Delving into the advancements and challenges in AI, from GPT-4 to the quest for AGI.'
-coverImage: '/assets/blog/future-of-ai/cover.png'
+coverImage: '/assets/blog/future-ai/cover.png'
 date: '2024-01-10'
 author:
   name: 'Elijah Arbee'
