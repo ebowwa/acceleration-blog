@@ -1,9 +1,5 @@
 import React from 'react';
-// Import icons from 'icones.js.org'
-import { Hubot } from '@icones/codicon/hubot';
-import { DiscordLogo } from '@icones/radix-icons/discord-logo';
-import { TerminalLinux } from '@icones/codicon/terminal-linux';
-import { Gto } from '@icones/cryptocurrency/gto';
+import { FaRobot, FaDiscord, FaLinux, FaBitcoin } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -39,16 +35,16 @@ const About = () => {
         <div className="social-links">
           {/* Social Media Icons and Links */}
           <a href="[GitHub Link]">
-            <Hubot title="GitHub" />
+            <FaRobot title="GitHub" />
           </a>
           <a href="[Discord Link]">
-            <DiscordLogo title="Discord" />
+            <FaDiscord title="Discord" />
           </a>
           <a href="[LinkedIn/Twitter/Other Profile Link]">
-            <TerminalLinux title="LinkedIn/Twitter/Other" />
+            <FaLinux title="LinkedIn/Twitter/Other" />
           </a>
           <a href="[Cryptocurrency/Blockchain Related Link]">
-            <Gto title="Cryptocurrency/Blockchain" />
+            <FaBitcoin title="Cryptocurrency/Blockchain" />
           </a>
         </div>
       </section>
@@ -57,5 +53,3 @@ const About = () => {
 }
 
 export default About;
-
-
