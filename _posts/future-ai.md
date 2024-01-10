@@ -4,8 +4,8 @@ excerpt: 'This post delves into the evolving landscape of artificial intelligenc
 coverImage: '/assets/blog/future-ai/cover.png'
 date: '2024-01-09T00:00:00.000Z'
 author:
-  name: Alex Smith
-  picture: '/assets/blog/authors/alex.jpeg'
+  name: Elijah Arbee
+  picture: '/assets/blog/authors/eli.jpeg'
 ogImage:
   url: '/assets/blog/future-ai/cover.png'
 ---
