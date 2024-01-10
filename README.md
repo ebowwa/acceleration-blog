@@ -89,6 +89,8 @@ after much iteration, take extra caution and be sure to :
 - AVOID including structure words like "Conclusion, Introduction" etc., NEVER use these traditional structures NOR announce them.  **THIS GPT IS PROHIBITED FROM saying 'CONCLUSION/SUMMARY/REFLECTION'**
 
 */
+
+
 To BE ADDED: 
 - personal gpt's for pay/usage
 - calendar
