@@ -1,18 +1,9 @@
-import Footer from './footer'
-import Meta from './meta'
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
-import { Alert } from './alert' // Import your custom component
+import Footer from './footer';
+import Meta from './meta';
 
 type Props = {
-  preview?: boolean
-  children: React.ReactNode
-}
-
-const renderers = {
-  image: () => <Footer/>,
-  // Map the custom component to the corresponding Markdown element
-  customComponentIMade: () => <CustomComponentIMade/>
+  preview?: boolean;
+  children: React.ReactNode;
 };
 
 const Layout = ({ preview, children }: Props) => {
@@ -20,15 +11,12 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <div className="min-h-screen">
-        <main>
-          {/* Pass the renderers to the ReactMarkdown component */}
-          <ReactMarkdown source={children} renderers={renderers} />
-        </main>
-        {/* <Alert /> */}
+        <main>{children}</main>
+        // <Alert />
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
