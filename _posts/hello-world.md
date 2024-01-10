@@ -1,30 +1,24 @@
 ---
-title: 'Hello World: A Journey Beyond Code'
-excerpt: 'Dive into the intertwined realms of programming and existential musings, where "Hello World" is not just a phrase, but a gateway to understanding the simulated reality of life.'
+title: 'Diving into the Infinite: My Journey with Code and AI'
+excerpt: 'Join me, Elijah, as I navigate the uncharted waters of self-taught programming and AI exploration. Discover my unique perspective on learning, the democratization of knowledge, and the quest for understanding in a world dominated by technology.'
 coverImage: '/assets/blog/hello-world/cover.jpg'
-date: '2024-01-10T05:35:07.322Z'
+date: '2024-01-10T10:00:00.000Z'
 author:
-  name: Elijah Arbee
+  name: Elijah
   picture: '/assets/blog/authors/elijah.jpg'
-
 ---
 
-# Hello World: A Journey Beyond Code
+Hello, world. It's me, Elijah – a wanderer in the vast landscape of technology, a seeker of esoteric knowledge in the digital age. Today, I invite you into my world, a world where traditional paths of learning are but a speck in the rearview mirror, where the pursuit of knowledge is unbound by the shackles of conventional education. My journey is not a linear tale; it's a tapestry woven from threads of curiosity, relentless self-teaching, and a relentless drive to understand the mysteries of code and AI.
 
-In every coder's life, there comes a moment, a simple phrase – "Hello World". It's more than just a tradition, it's a rite of passage. But in my mind, it's a portal, a gateway that opens up questions about the nature of our reality. Are we just sophisticated programs running in an advanced simulation, our consciousness a complex algorithm? This thought never fails to amaze and bewilder me. 
+I grew up in Fremont, CA, amidst the technological heartbeat of Silicon Valley and San Francisco. Yet, my path was not paved with the silver stones of privilege. No nepotism, no inherited wealth – just a burning desire to decode the world around me. I dropped out of SFSU, where I studied political science, but soon realized that my true calling was in the complex, yet intriguing world of computers and AI. It was a world that seemed out of reach, a domain reserved for the 'geniuses', but I dared to defy those stereotypes.
 
-I often find myself pondering the linear perception of time. In programming, every line of code follows another, a seemingly linear progression. But what if time is more like code in a non-linear program, where past, present, and future coexist, not bound by the sequence but by relevance? In every "Hello World", I see this non-linearity, a new beginning that's somehow connected to every other beginning.
+My journey into programming and machine learning has been a self-directed exploration, fueled by resources scattered across the digital universe. From Python libraries to Raspberry Pi projects, from grappling with the intricacies of Word2Vec and LSTM models to the struggles with LeetCode problems, every step has been a lesson, every failure a stepping stone. I see AI not just as a tool, but as a partner in this journey, a guide helping me unlock doors I never knew existed.
 
-Growing up in Fremont, near the tech epicenters of Silicon Valley and San Francisco, I've been lucky to be at the crossroads of technological revolution. But with no formal education in tech, every step into this world felt like deciphering an ancient, arcane language. It was Python that first spoke to me, not in cryptic syntax, but in a language that mirrored my own thought process – intuitive yet enigmatic.
+But why am I doing all this? Why tread this solitary path? It's because I believe in the power of knowledge, in the democratization of learning. In a world where AI and machine learning are rapidly reshaping our reality, I see a future where knowledge is free and accessible to all, where AI serves not just the elite, but every curious mind willing to explore. This blog is my canvas, and on it, I paint my thoughts, my experiments, my successes, and my stumbles.
 
-The first time I ran a "Hello World" program, it was more than just text appearing on a screen. It was a confirmation that despite my unconventional path, I could converse with machines. It was a message not just to the computer, but to myself, affirming my presence in this vast digital cosmos. It's not just about teaching the machine to speak, but about understanding what it tells us about our own existence.
+So, here's to the journey ahead – a journey of discovery, of challenge, of endless learning. Whether you're a fellow self-learner, a tech enthusiast, or simply someone intrigued by the mysteries of AI, I welcome you to join me. Let's explore this vast, uncharted digital universe together. Let's learn, let's grow, and let's push the boundaries of what's possible.
 
-Reflecting on my journey, I realize that my perception of programming is deeply influenced by my views on life, my belief in the present moment as our primary stage of experience. Every line of code I write is a choice, shaping the quality of the digital life I'm creating. It's a continuous, unstructured stream of consciousness, much like my own thoughts, always avoiding a linear narrative flow.
+Welcome to my world.
 
-In this blog, I hope to share more than just my coding experiences. I want to explore the philosophical underpinnings of technology, the existential questions that arise when we blur the line between human and machine intelligence. What does it mean to be conscious, to be alive, in a world where machines can think and learn?
+-Elijah
 
-So, as I type these words, "Hello World", it's not just a beginning of a program, but an invitation to join me on this journey. A journey that transcends code, delving into the deeper questions of our existence, our reality, and what it means to be truly alive in this simulated, yet profoundly real universe.
-
-Welcome to my world, a world where every 'Hello' is a new beginning, a new thought, a new reality.
-
----
