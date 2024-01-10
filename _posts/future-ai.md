@@ -1,13 +1,13 @@
 ---
 title: 'Exploring the Future of AI'
 excerpt: 'This post delves into the evolving landscape of artificial intelligence, highlighting three key developments.'
-coverImage: '/assets/blog/future-ai/cover.jpg'
+coverImage: '/assets/blog/future-ai/cover.png'
 date: '2024-01-09T00:00:00.000Z'
 author:
   name: Alex Smith
   picture: '/assets/blog/authors/alex.jpeg'
 ogImage:
-  url: '/assets/blog/future-ai/cover.jpg'
+  url: '/assets/blog/future-ai/cover.png'
 ---
 
 
