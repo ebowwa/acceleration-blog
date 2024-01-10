@@ -4,7 +4,7 @@ excerpt: 'Join me, Elijah, as I navigate the uncharted waters of self-taught pro
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2024-01-10T10:00:00.000Z'
 author:
-  name: Elijah
+  name: Elijah Arbee
   picture: '/assets/blog/authors/elijah.jpg'
 ---
 
