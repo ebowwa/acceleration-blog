@@ -5,7 +5,7 @@ excerpt: 'Diving into the rabbit hole of AI, technology, and the nature of our s
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2024-01-10T10:00:00.000Z'
 author:
-  name: Elijah
+  name: Elijah Arbee
   picture: '/assets/blog/authors/elijah.jpg'
 ---
 
