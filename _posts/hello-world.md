@@ -6,6 +6,8 @@ date: '2024-01-10T10:00:00.000Z'
 author:
   name: Elijah Arbee
   picture: '/assets/blog/authors/elijah.jpg'
+ogImage:
+  url: '/assets/blog/hello-world/og.jpg'
 ---
 
 Hello, world. It's me, Elijah – a wanderer in the vast landscape of technology, a seeker of esoteric knowledge in the digital age. Today, I invite you into my world, a world where traditional paths of learning are but a speck in the rearview mirror, where the pursuit of knowledge is unbound by the shackles of conventional education. My journey is not a linear tale; it's a tapestry woven from threads of curiosity, relentless self-teaching, and a relentless drive to understand the mysteries of code and AI.
