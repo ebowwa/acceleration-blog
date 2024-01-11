@@ -23,6 +23,11 @@ const Title = styled.h1`
 
 const Description = styled.p`
   font-size: 18px;
+  margin-top: 20px; /* Add margin to create space */
+`;
+
+const GptContainer = styled.div`
+  margin-top: 20px; /* Add margin to create space */
 `;
 
 const GptLink = styled.a`
@@ -53,11 +58,13 @@ curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/
       </CurlCommands>
       <Description>
         Add these endpoints to your GPT, software, or model trainings.
-        <br />
-        Explore the <GptLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog">acceleration blog</GptLink> GPT for blog-related actions.
-        <br />
-        <GptImage src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="Acceleration Blog GPT" />
       </Description>
+      <GptContainer>
+        <GptLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog">
+          Explore the acceleration blog GPT
+        </GptLink>
+        <GptImage src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="Acceleration Blog GPT" />
+      </GptContainer>
     </PageContainer>
   );
 };
