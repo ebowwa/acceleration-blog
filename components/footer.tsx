@@ -17,10 +17,10 @@ const Footer = () => {
               Chat with the blogs
             </a>
             <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+              href={`/curls`}
               className="mx-3 font-bold hover:underline"
             >
-              View on GitHub
+              Interested in curling this blog, click here 
             </a>
           </div>
         </div>
