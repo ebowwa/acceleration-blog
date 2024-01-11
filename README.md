@@ -1,4 +1,4 @@
-# /* So Far : 
+# So Far : 
 A statically generated blog using Next.js, Markdown, and TypeScript
 
 This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
@@ -9,14 +9,11 @@ The blog posts are stored in `/_posts` as Markdown files with front matter suppo
 
 To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
 
-## Demo
-
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
 
 # Notes
 
 `blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
-
+_________________
 # Blogs GPT Prompt
 
 ###Instruction###
@@ -87,8 +84,7 @@ after much iteration, take extra caution and be sure to :
 - share a download of the blog as a markdown '.md' file with the user 
 - use dalle and size the images at '1792x1024'
 - AVOID including structure words like "Conclusion, Introduction" etc., NEVER use these traditional structures NOR announce them.  **THIS GPT IS PROHIBITED FROM saying 'CONCLUSION/SUMMARY/REFLECTION'**
-
-*/
+_________________
 
 
 To BE ADDED: 
