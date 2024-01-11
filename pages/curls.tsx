@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styled components for various parts of the page
 const PageContainer = styled.div`
   text-align: center;
   padding: 20px;
@@ -23,11 +24,11 @@ const Title = styled.h1`
 
 const Description = styled.p`
   font-size: 18px;
-  margin-top: 20px; /* Add margin to create space */
+  margin-top: 20px;
 `;
 
 const GptContainer = styled.div`
-  margin-top: 20px; /* Add margin to create space */
+  margin-top: 20px;
 `;
 
 const GptLink = styled.a`
@@ -40,8 +41,10 @@ const GptLink = styled.a`
 const GptImage = styled.img`
   max-width: 100%;
   height: auto;
+  margin-top: 20px;
 `;
 
+// React functional component for the CurlPage
 const CurlPage: React.FC = () => {
   return (
     <PageContainer>
@@ -63,11 +66,13 @@ curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/
         <GptLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog">
           Explore the acceleration blog GPT
         </GptLink>
-        <GptImage src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="Acceleration Blog GPT" />
+        <GptImage 
+          src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" 
+          alt="Acceleration Blog GPT" 
+        />
       </GptContainer>
     </PageContainer>
   );
 };
 
 export default CurlPage;
-
