@@ -15,10 +15,14 @@ const CurlCommands = styled.pre`
   text-align: left;
 `;
 
+const PageTitle = styled.h1`
+  font-weight: bold;
+`;
+
 const CurlPage: React.FC = () => {
   return (
     <PageContainer>
-      <h1>Curl Commands</h1>
+      <PageTitle>Curl Commands</PageTitle>
       <CurlCommands>
         {`# Search Posts
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/search/searchPosts?keywords[]=JavaScript&keywords[]=API'
