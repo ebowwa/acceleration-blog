@@ -25,7 +25,7 @@ export default async (req, res) => {
     // Respond with the JSON data
     res.status(200).json(postsData);
   } catch (error) {
-    console.error(error);
+    console.error(error); // Log the error for debugging purposes
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
