@@ -40,7 +40,7 @@ curl https://acceleration-iofvxqzaf-ebowwa.vercel.app/api/posts/all
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'`}
       </CurlCommands>
       <Description>
-        This page displays example curl commands for various API endpoints. You can customize and use these commands for your needs.
+        Add these endpoints to your GPT, software, or model trainings 
       </Description>
     </PageContainer>
   );
