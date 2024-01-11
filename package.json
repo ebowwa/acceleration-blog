@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module", // Add this line
   "scripts": {
     "dev": "next",
     "build": "next build",
