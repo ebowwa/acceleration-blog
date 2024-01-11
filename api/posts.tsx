@@ -1,23 +1,34 @@
-// pages/api/posts.ts
+// api/posts.tsx
 
-import { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-  // Read posts data from _posts directory
-  const postsDirectory = './_posts';
-  const filenames = fs.readdirSync(postsDirectory);
+export default (req, res) => {
+  // Define the directory where your Markdown files are located
+  const postsDirectory = path.join(process.cwd(), '_posts');
 
-  // Read content of each post and create an array of posts
-  const posts = filenames.map((filename) => {
-    const fullPath = `${postsDirectory}/${filename}`;
-    const content = fs.readFileSync(fullPath, 'utf8');
+  // Read the filenames of all Markdown files in the directory
+  const fileNames = fs.readdirSync(postsDirectory);
+
+  // Iterate through the file names and read the content of each Markdown file
+  const postsData = fileNames.map((fileName) => {
+    // Construct the full path to the Markdown file
+    const fullPath = path.join(postsDirectory, fileName);
+
+    // Read the content of the Markdown file
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    // Parse the front matter and content using gray-matter
+    const { data, content } = matter(fileContents);
+
+    // Return the metadata and content as an object
     return {
-      filename,
+      metadata: data,
       content,
     };
   });
 
-  // Respond with the list of posts as JSON
-  res.status(200).json({ posts });
+  // Return the list of posts as JSON
+  res.status(200).json(postsData);
 };
