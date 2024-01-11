@@ -1,34 +1,27 @@
-// api/posts.tsx
+// api/posts.ts
 
 import fs from 'fs';
 import path from 'path';
-import matter from 'gray-matter';
 
 export default (req, res) => {
-  // Define the directory where your Markdown files are located
+  // Define the path to your _posts directory
   const postsDirectory = path.join(process.cwd(), '_posts');
 
-  // Read the filenames of all Markdown files in the directory
+  // Read all the markdown files in the _posts directory
   const fileNames = fs.readdirSync(postsDirectory);
 
-  // Iterate through the file names and read the content of each Markdown file
+  // Read the content of each markdown file and convert it to JSON
   const postsData = fileNames.map((fileName) => {
-    // Construct the full path to the Markdown file
     const fullPath = path.join(postsDirectory, fileName);
-
-    // Read the content of the Markdown file
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-    // Parse the front matter and content using gray-matter
-    const { data, content } = matter(fileContents);
+    // You can parse the markdown content into JSON here if needed
+    // For simplicity, let's assume the content is already in JSON format
+    const jsonData = JSON.parse(fileContents);
 
-    // Return the metadata and content as an object
-    return {
-      metadata: data,
-      content,
-    };
+    return jsonData;
   });
 
-  // Return the list of posts as JSON
+  // Respond with the JSON data
   res.status(200).json(postsData);
 };
