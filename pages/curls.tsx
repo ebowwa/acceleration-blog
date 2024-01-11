@@ -25,14 +25,14 @@ const Description = styled.p`
   font-size: 18px;
 `;
 
-const GptLink = styled.a`
-  text-decoration: none;
-  color: #007bff;
+const GPTLink = styled.a`
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
 `;
 
-const Image = styled.img`
+const GPTImage = styled.img`
   max-width: 100%;
-  height: auto;
   margin-top: 20px;
 `;
 
@@ -51,12 +51,12 @@ curl https://acceleration-iofvxqzaf-ebowwa.vercel.app/api/posts/all
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'`}
       </CurlCommands>
       <Description>
-        Add these endpoints to your GPT, software, or model trainings. Learn more about GPT at{' '}
-        <GptLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" target="_blank" rel="noopener noreferrer">
-          OpenAI's GPT Community
-        </GptLink>
+        Add these endpoints to your GPT, software, or model trainings.
       </Description>
-      <Image src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="GPT Community" />
+      <GPTLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" target="_blank">
+        Learn more about OpenAI GPT
+      </GPTLink>
+      <GPTImage src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="OpenAI GPT Image" />
     </PageContainer>
   );
 };
