@@ -25,6 +25,17 @@ const Description = styled.p`
   font-size: 18px;
 `;
 
+const GptLink = styled.a`
+  text-decoration: none;
+  color: #007bff;
+`;
+
+const Image = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+`;
+
 const CurlPage: React.FC = () => {
   return (
     <PageContainer>
@@ -40,11 +51,14 @@ curl https://acceleration-iofvxqzaf-ebowwa.vercel.app/api/posts/all
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'`}
       </CurlCommands>
       <Description>
-        Add these endpoints to your GPT, software, or model trainings 
+        Add these endpoints to your GPT, software, or model trainings. Learn more about GPT at{' '}
+        <GptLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" target="_blank" rel="noopener noreferrer">
+          OpenAI's GPT Community
+        </GptLink>
       </Description>
+      <Image src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="GPT Community" />
     </PageContainer>
   );
 };
 
 export default CurlPage;
-
