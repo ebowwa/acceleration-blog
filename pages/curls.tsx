@@ -25,15 +25,20 @@ const Description = styled.p`
   font-size: 18px;
 `;
 
-const GPTLink = styled.a`
-  font-size: 18px;
-  margin-top: 20px;
-  display: inline-block;
+const GPTInfoContainer = styled.div`
+  margin-top: 30px;
 `;
 
 const GPTImage = styled.img`
-  max-width: 100%;
-  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+`;
+
+const GPTInfo = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 `;
 
 const CurlPage: React.FC = () => {
@@ -53,10 +58,21 @@ curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/
       <Description>
         Add these endpoints to your GPT, software, or model trainings.
       </Description>
-      <GPTLink href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" target="_blank">
-        Learn more about OpenAI GPT
-      </GPTLink>
-      <GPTImage src="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" alt="OpenAI GPT Image" />
+      <GPTInfoContainer>
+        <GPTInfo>
+          <GPTImage src="https://your-gpt-image-url-here" alt="GPT Image" />
+          <div>
+            <p>Acceleration Blog GPT</p>
+            <p>
+              Connect to the blog via actions. Learn more about it{' '}
+              <a href="https://chat.openai.com/g/g-kddwKMo02-acceleration-blog" target="_blank" rel="noopener noreferrer">
+                here
+              </a>
+              .
+            </p>
+          </div>
+        </GPTInfo>
+      </GPTInfoContainer>
     </PageContainer>
   );
 };
