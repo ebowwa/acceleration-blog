@@ -15,14 +15,20 @@ const CurlCommands = styled.pre`
   text-align: left;
 `;
 
-const PageTitle = styled.h1`
+const Title = styled.h1`
   font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+`;
+
+const Description = styled.p`
+  font-size: 18px;
 `;
 
 const CurlPage: React.FC = () => {
   return (
     <PageContainer>
-      <PageTitle>Curl Commands</PageTitle>
+      <Title>Curl Commands</Title>
       <CurlCommands>
         {`# Search Posts
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/search/searchPosts?keywords[]=JavaScript&keywords[]=API'
@@ -33,8 +39,12 @@ curl https://acceleration-iofvxqzaf-ebowwa.vercel.app/api/posts/all
 # Sort Posts by Title (Ascending)
 curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'`}
       </CurlCommands>
+      <Description>
+        This page displays example curl commands for various API endpoints. You can customize and use these commands for your needs.
+      </Description>
     </PageContainer>
   );
 };
 
 export default CurlPage;
+
