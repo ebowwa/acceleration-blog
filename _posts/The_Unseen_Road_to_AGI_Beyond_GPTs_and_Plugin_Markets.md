@@ -1,7 +1,7 @@
 ---
 title: 'The Unseen Road to AGI: Beyond GPTs and Plug-in Markets'
 excerpt: 'Exploring the future of AI as it steers away from proprietary models towards a universal interface.'
-coverImage: '/assets/blog/tech/road-to-agi/cover.png'
+coverImage: '/assets/blog/road-to-agi/cover.png'
 date: '2024-01-13T09:45:40.316991'
 tags: ['Artificial Intelligence', 'AGI', 'OpenAI', 'Technology', 'Innovation']
 ogImage:
