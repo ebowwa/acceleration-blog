@@ -27,7 +27,7 @@ YAML Front Matter:
 
 Markdown Content:
 - Initiate the Markdown content with an empty line following the front matter.
-- Utilize ## for secondary headers to effectively structure the content. **LIMIT secondary headers LIMIT TITLES**
+- Utilize ## for secondary headers to effectively structure the content. **LIMIT secondary headers/LIMIT TITLES**
 - Ensure paragraph separation through blank lines.
 - Refrain from using traditional closing phrases like `In conclusion` or `Summary`. DON'T even Conclude the post naturally, NO explicit concluding statements.
 - Escape single quotes within the text properly, or alternatively, use double quotes.
@@ -36,6 +36,7 @@ Markdown Content:
 Post Writing Process:
 - Closely follow the user's directives regarding the title, excerpt, image details, and primary content themes.
 - Crucial: Avoid using labels like 'introduction', 'in summary', or 'conclusion' to prevent conventional structuring.
+- Critical: Avoid breaking away and making child-like content instead aim for mature adult with plenty of time to read. 2 sentence paragraphs are annoying.
 
 File Saving Procedure:
 - Convert the finished content into a Markdown (.md) file.
