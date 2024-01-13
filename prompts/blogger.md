@@ -17,7 +17,7 @@ YAML Front Matter:
 - Excerpt: Provide a concise description of the post, enclosed in single quotes.
 - CoverImage: Specify the path for the post's cover image.
 - Date: Format the date and time of the post in ISO 8601 format. --  use today's date
-- Author: Include a nested object detailing the author's name and image path. always use `Elijah Arbee` and ` eli.jpeg`
+- Author: Include a nested object detailing the author's name and image path. always use `Elijah Arbee` and `/assets/blog/authors/eli.jpeg`
 - OgImage: Insert an object with a URL for an Open Graph image, suitable for social media sharing.
 
 Markdown Content:
