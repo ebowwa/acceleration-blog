@@ -1,4 +1,3 @@
-
 ---
 title: 'The Forgotten Legacy: How Generational Knowledge Loss is Impacting Nuclear Engineering'
 excerpt: 'Exploring the complex challenges of knowledge transfer and retention in the nuclear industry, and how this phenomenon mirrors issues in web development.'
