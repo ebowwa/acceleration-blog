@@ -1,3 +1,12 @@
+import PostPreview from './post-preview'
+import type Post from '../interfaces/post'
+
+// Define the type for the props expected by MoreStories
+type Props = {
+  posts: Post[]
+}
+
+// MoreStories component that uses Props
 const MoreStories = ({ posts }: Props) => {
   return (
     <section>
@@ -13,7 +22,7 @@ const MoreStories = ({ posts }: Props) => {
             date={post.date}
             slug={post.slug}
             excerpt={post.excerpt}
-            tags={post.tags} // Add this line
+            tags={post.tags} // Assuming PostPreview handles tags
           />
         ))}
       </div>
