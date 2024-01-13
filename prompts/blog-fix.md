@@ -93,7 +93,7 @@ Instruct DALL-E to generate a 1792x1024 size image relevant to "Innovations in R
 
 ```
 a template for creating blog post YAML metadata. Here it is:
-
+```
 yaml
 Copy code
 ---
@@ -105,5 +105,6 @@ tags: ['Tag1', 'Tag2', 'Tag3'] # List of relevant tags for the post.
 ogImage:
   url: '/assets/blog/your-post-folder/cover.jpg'
 ---
+```
 
 User Input: [images, text, pdf, files, etc.] // **Write the blog post based on this** be intuitive, ABSOLUTELY NEVER seek/ask for user oversight, automatically get to writing the blog after understanding the assignment and the idea they have shared
