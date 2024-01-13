@@ -18,9 +18,11 @@ const MoreStories = ({ posts }: Props) => {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
+            // Removed author prop
             slug={post.slug}
             excerpt={post.excerpt}
+            // If you've added a tags prop to PostPreview, include it here
+            // tags={post.tags}
           />
         ))}
       </div>
