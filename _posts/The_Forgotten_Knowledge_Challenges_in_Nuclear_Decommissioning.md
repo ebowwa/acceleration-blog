@@ -5,7 +5,7 @@ coverImage: '/assets/blog/nuclear-decommissioning/cover.png'
 date: 2024-01-13
 tags: ["'Nuclear Engineering'", "'Knowledge Management'", "'Decommissioning'"]
 ogImage:
-  url: '/assets/blog/nuclear-decommissioning/cover.png'
+  url: '/assets/blog/nuclear-engineering/cover.png'
 ---
 
 ## The Ephemeral Memory of Nuclear Engineering: A Race Against Time
