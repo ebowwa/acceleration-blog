@@ -1,6 +1,7 @@
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import styles from '../styles/Tags.module.css' // Import the CSS module for tags
 
 type Props = {
   title: string
@@ -27,7 +28,7 @@ const PostPreview = ({
       <h3 className="text-3xl mb-3 leading-snug">
         <Link
           as={`/posts/${slug}`}
-          href="/posts/[slug]"
+          href={`/posts/[slug]`}
           className="hover:underline"
         >
           {title}
@@ -37,14 +38,15 @@ const PostPreview = ({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      {/* Display tags */}
-      <ul>
+      {/* Display tags as styled bubbles */}
+      <div className={styles.tagContainer}>
         {tags.map(tag => (
-          <li key={tag}>{tag}</li>
+          <span key={tag} className={styles.tagBubble}>{tag}</span>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
 
 export default PostPreview
+
