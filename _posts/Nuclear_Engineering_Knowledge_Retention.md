@@ -1,4 +1,3 @@
-
 ---
 title: 'The Challenge of Preserving Knowledge in Nuclear Engineering'
 excerpt: 'Exploring the complexities of knowledge retention in the context of nuclear engineering and decommissioning in the United States.'
