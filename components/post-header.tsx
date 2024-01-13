@@ -1,6 +1,7 @@
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
+import styles from '../styles/Tags.module.css' // Import the CSS module for tags
 
 type Props = {
   title: string
@@ -20,12 +21,12 @@ const PostHeader = ({ title, coverImage, date, tags }: Props) => {
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
-        {/* Display tags */}
-        <ul>
+        {/* Display tags as styled bubbles */}
+        <div className={styles.tagContainer}>
           {tags.map(tag => (
-            <li key={tag}>{tag}</li>
+            <span key={tag} className={styles.tagBubble}>{tag}</span>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   )
