@@ -10,10 +10,9 @@ The blog posts are stored in `/_posts` as Markdown files with front matter suppo
 To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
 
 # Curls
-- curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/search/searchPosts?keywords[]=JavaScript&keywords[]=API'
-- curl https://acceleration-iofvxqzaf-ebowwa.vercel.app/api/posts/all
-- curl -X GET 'https://acceleration-e14gqajju-ebowwa.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'
-
+- curl -X GET 'https://a-cell.vercel.app/api/posts/search/searchPosts?keywords[]=JavaScript&keywords[]=API'
+- curl https://a-cell.vercel.app/api/posts/all
+- curl -X GET 'https://a-cell.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'
 
 # Notes
 
