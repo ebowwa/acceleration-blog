@@ -1,16 +1,14 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import type Author from '../interfaces/author'
 
 type Props = {
   title: string
   coverImage: string
   date: string
   excerpt: string
-  author: Author
   slug: string
+  tags: string[] // Added tags array
 }
 
 const PostPreview = ({
@@ -18,8 +16,8 @@ const PostPreview = ({
   coverImage,
   date,
   excerpt,
-  author,
   slug,
+  tags, // Added tags
 }: Props) => {
   return (
     <div>
@@ -39,7 +37,12 @@ const PostPreview = ({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      {/* Display tags */}
+      <ul>
+        {tags.map(tag => (
+          <li key={tag}>{tag}</li>
+        ))}
+      </ul>
     </div>
   )
 }

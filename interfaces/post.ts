@@ -5,12 +5,14 @@ type PostType = {
   title: string
   date: string
   coverImage: string
-  author: Author
+  // Removed the author field
   excerpt: string
   ogImage: {
     url: string
   }
   content: string
+  // Added tags as an array of strings
+  tags: string[]
 }
 
 export default PostType

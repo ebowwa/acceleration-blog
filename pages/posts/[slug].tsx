@@ -41,7 +41,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
+                tags={post.tags} // Replaced author with tags
               />
               <PostBody content={post.content} />
             </article>
@@ -63,7 +63,7 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
+    'tags', // Fetching tags instead of author
     'content',
     'ogImage',
     'coverImage',

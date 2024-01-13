@@ -3,9 +3,7 @@ title: 'The Forgotten Legacy: How Generational Knowledge Loss is Impacting Nucle
 excerpt: 'Exploring the complex challenges of knowledge transfer and retention in the nuclear industry, and how this phenomenon mirrors issues in web development.'
 coverImage: '/assets/blog/nuclear-engineering/cover.png'
 date: '2024-01-12T00:00:00Z'
-author:
-  name: 'Elijah Arbee'
-  picture: '/assets/blog/authors/eli.jpeg'
+tags: ['Nuclear Engineering', 'Knowledge Transfer', 'Web Development']
 ogImage:
   url: '/assets/blog/nuclear-engineering/cover.png'
 ---

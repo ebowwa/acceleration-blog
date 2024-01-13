@@ -3,9 +3,7 @@ title: 'The Unseen Path of AI: Beyond GPT Plug-ins and AGI'
 excerpt: 'Delving into the landscape of AI, exploring the transition from GPT plug-ins to the pursuit of AGI.'
 coverImage: '/assets/blog/the-unseen-path-of-ai/cover.png'
 date: '2024-01-13T00:24:56.087479+00:00'
-author:
-  name: 'Elijah Arbee'
-  picture: '/assets/blog/authors/eli.jpeg'
+tags: ['Nuclear Engineering', 'Knowledge Transfer', 'Web Development']
 ogImage:
   url: 'http://example.com/assets/blog/the-unseen-path-of-ai/og-image.png'
 ---

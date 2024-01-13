@@ -28,7 +28,7 @@ export default function Index({ allPosts }: Props) {
               title={heroPost.title}
               coverImage={heroPost.coverImage}
               date={heroPost.date}
-              author={heroPost.author}
+              tags={heroPost.tags} // Replaced author with tags
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />
@@ -45,7 +45,7 @@ export const getStaticProps = async () => {
     'title',
     'date',
     'slug',
-    'author',
+    'tags', // Fetching tags instead of author
     'coverImage',
     'excerpt',
   ])
