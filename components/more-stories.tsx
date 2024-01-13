@@ -1,10 +1,3 @@
-import PostPreview from './post-preview'
-import type Post from '../interfaces/post'
-
-type Props = {
-  posts: Post[]
-}
-
 const MoreStories = ({ posts }: Props) => {
   return (
     <section>
@@ -18,11 +11,9 @@ const MoreStories = ({ posts }: Props) => {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            // Removed author prop
             slug={post.slug}
             excerpt={post.excerpt}
-            // If you've added a tags prop to PostPreview, include it here
-            // tags={post.tags}
+            tags={post.tags} // Add this line
           />
         ))}
       </div>
