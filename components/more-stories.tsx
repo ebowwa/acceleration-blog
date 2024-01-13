@@ -1,11 +1,12 @@
-// components/more-stories.tsx
-import PostPreview from './post-preview';
-import type Post from '../interfaces/post';
+import PostPreview from './post-preview'
+import type Post from '../interfaces/post'
 
+// Define the type for the props expected by MoreStories
 type Props = {
-  posts: Post[];
-};
+  posts: Post[]
+}
 
+// MoreStories component that uses Props
 const MoreStories = ({ posts }: Props) => {
   return (
     <section>
@@ -21,12 +22,12 @@ const MoreStories = ({ posts }: Props) => {
             date={post.date}
             slug={post.slug}
             excerpt={post.excerpt}
-            tags={post.tags} // Pass tags to PostPreview
+            tags={post.tags} // Assuming PostPreview handles tags
           />
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MoreStories;
+export default MoreStories

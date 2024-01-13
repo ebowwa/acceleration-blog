@@ -2,18 +2,27 @@
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
 import Link from 'next/link';
-import styles from '../styles/Tags.module.css'; // Import the CSS module for tags
 
+// Props type definition including tags and styles
 type HeroPostProps = {
   title: string;
   coverImage: string;
   date: string;
+  tags: string[]; // Include tags in the props
   slug: string;
   excerpt: string;
-  tags: string[]; // Include tags in the props
+  tagStyles: { [key: string]: string }; // CSS module for styling tags
 };
 
-const HeroPost = ({ title, coverImage, date, slug, excerpt, tags }: HeroPostProps) => {
+const HeroPost = ({
+  title,
+  coverImage,
+  date,
+  tags,
+  slug,
+  excerpt,
+  tagStyles,
+}: HeroPostProps) => {
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -28,20 +37,20 @@ const HeroPost = ({ title, coverImage, date, slug, excerpt, tags }: HeroPostProp
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
-          </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          {/* Render the tags as styled bubbles */}
-          <div className={styles.tagContainer}>
-            {tags.map(tag => (
-              <span key={tag} className={styles.tagBubble}>{tag}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+                      {/* Render the tags as styled bubbles */}
+                      <div className={tagStyles.tagContainer}>
+                        {tags.map(tag => (
+                          <span key={tag} className={tagStyles.tagBubble}>{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              );
+            };
 
-export default HeroPost;
+            export default HeroPost;
