@@ -1,26 +1,35 @@
-// components/post-preview.tsx
-import DateFormatter from './date-formatter';
-import CoverImage from './cover-image';
-import Link from 'next/link';
-import styles from '../styles/Tags.module.css'; // Ensure the styles are imported
+import DateFormatter from './date-formatter'
+import CoverImage from './cover-image'
+import Link from 'next/link'
 
-type PostPreviewProps = {
-  title: string;
-  coverImage: string;
-  date: string;
-  slug: string;
-  excerpt: string;
-  tags: string[]; // Add tags to the props
-};
+type Props = {
+  title: string
+  coverImage: string
+  date: string
+  excerpt: string
+  slug: string
+  tags: string[] // Added tags array
+}
 
-const PostPreview = ({ title, coverImage, date, slug, excerpt, tags }: PostPreviewProps) => {
+const PostPreview = ({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  slug,
+  tags, // Added tags
+}: Props) => {
   return (
     <div>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link
+          as={`/posts/${slug}`}
+          href="/posts/[slug]"
+          className="hover:underline"
+        >
           {title}
         </Link>
       </h3>
@@ -28,14 +37,14 @@ const PostPreview = ({ title, coverImage, date, slug, excerpt, tags }: PostPrevi
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      {/* Tag bubbles */}
-      <div className={styles.tagContainer}>
-        {tags.map((tag) => (
-          <span key={tag} className={styles.tagBubble}>{tag}</span>
+      {/* Display tags */}
+      <ul>
+        {tags.map(tag => (
+          <li key={tag}>{tag}</li>
         ))}
-      </div>
+      </ul>
     </div>
-  );
-};
+  )
+}
 
-export default PostPreview;
+export default PostPreview
