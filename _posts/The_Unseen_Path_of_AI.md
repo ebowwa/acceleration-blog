@@ -4,8 +4,8 @@ excerpt: 'Delving into the landscape of AI, exploring the transition from GPT pl
 coverImage: '/assets/blog/the-unseen-path-of-ai/cover.png'
 date: '2024-01-13T00:24:56.087479+00:00'
 author:
-  name: 'Tech Visionary'
-  picture: '/assets/blog/authors/tech-visionary.jpeg'
+  name: 'Elijah Arbee'
+  picture: '/assets/blog/authors/eli.jpeg'
 ogImage:
   url: 'http://example.com/assets/blog/the-unseen-path-of-ai/og-image.png'
 ---
