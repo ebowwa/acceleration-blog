@@ -1,7 +1,7 @@
 ---
 title: 'The Forgotten Knowledge: Challenges in Nuclear Decommissioning'
 excerpt: 'Exploring the impact of generational knowledge loss in nuclear engineering and its implications.'
-coverImage: '/assets/blog/nuclear-decommissioning/cover.png'
+coverImage: '/assets/blog/nuclear-engineering/cover.png'
 date: '2024-01-13T00:24:56.087479+00:00'
 tags: ["'Nuclear Engineering'", "'Knowledge Management'", "'Decommissioning'"]
 ogImage:
