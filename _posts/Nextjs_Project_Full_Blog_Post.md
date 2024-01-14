@@ -8,6 +8,7 @@ ogImage:
   url: '/assets/blog/nextjs-commit-log/cover.png'
 ---
 
+## A Developer's Journey: Insights from a Next.js Project Commit Log
 Harnessing the power of a developer's keystrokes and the untold stories within commit logs, we embark on an illuminating journey through the development of a Next.js site. This narrative isn't just about lines of code or technical jargon; it's a peek into the heart and mind of a programmer, where each commit represents a moment of inspiration, a burst of problem-solving, or a triumph over a coding challenge.
 
 **The Rhythm of Code: Understanding the Tempo of Development**
