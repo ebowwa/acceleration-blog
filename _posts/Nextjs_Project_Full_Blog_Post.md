@@ -1,5 +1,5 @@
 ---
-title: 'A Developer's Journey: Insights from a Next.js Project Commit Log'
+title: 'A Developer Journey: Insights from a Next.js Project Commit Log'
 excerpt: 'Exploring the fascinating story told by the commit log of a Next.js website development.'
 coverImage: '/assets/blog/nextjs-commit-log/cover.png'
 date: '2024-01-14' # Replace with today's date in ISO 8601 format.
