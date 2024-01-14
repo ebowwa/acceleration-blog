@@ -39,10 +39,10 @@ Here are some curl commands for interacting with the API:
 
 in progress: 
 ```
-personal gpt's for pay/usage
-calendar
-games
-blog search - indexed blogs
-gpt to blogs
-`.mdx` support
+- personal gpt's for pay/usage
+- calendar
+- games
+- blog search - indexed blogs
+- gpt to blogs
+- `.mdx` support
 ```
