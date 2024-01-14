@@ -37,7 +37,7 @@ Here are some curl commands for interacting with the API:
    curl -X GET 'https://a-cell.vercel.app/api/posts/sorting/sortPosts?sortBy=title&order=asc'
    ```
 
-To BE ADDED: 
+in progress: 
 ```
 personal gpt's for pay/usage
 calendar
