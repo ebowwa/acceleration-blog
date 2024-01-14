@@ -16,11 +16,11 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 ```
 
 To BE ADDED: 
-- personal gpt's for pay/usage
-- calendar
-- games
-- blog search - indexed blogs
-- gpt to blogs
-- `.mdx` support
-
-
+```
+personal gpt's for pay/usage
+calendar
+games
+blog search - indexed blogs
+gpt to blogs
+`.mdx` support
+```
