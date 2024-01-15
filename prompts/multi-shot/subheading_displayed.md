@@ -11,6 +11,7 @@ i just added `.mdx` support to my statical blog, but now the markdown is all nor
 
 
 Follow Up with failed result:
+```
 it still builds but that didnt solve anything; you are to be `intuitive` you should just do these things NOT ask me. ##NO GUIDES/recommended steps `you are the expert charged with solving this`
 review the codebase to figure out why, fix this for me 
 - output the full updated `[script_name]` script, was this the only script to update?
@@ -24,3 +25,4 @@ seek to solve this easy issue like an expert wed dev, review all the codebase in
 3. use code interpreter to fully read the full files
 4. output the full script not a part of it and NO brevity
 `DON'T chat with me`
+```
