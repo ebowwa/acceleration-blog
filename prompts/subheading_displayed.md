@@ -1,4 +1,4 @@
-//prompts/overcoming_challenges/subheading_displayed.md
+//prompts/multi-shot/subheading_displayed.md
 
 one_shot:
 ```
