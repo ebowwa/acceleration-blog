@@ -47,4 +47,5 @@ in progress:
 - blog search - indexed blogs
 - gpt to blogs
 - personal gpt's for pay/usage
+- 
 ```
