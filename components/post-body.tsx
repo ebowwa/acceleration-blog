@@ -1,24 +1,31 @@
-import ReactMarkdown from 'react-markdown';
-import markdownStyles from './markdown-styles.module.css';
+import { useEffect, useState } from 'react';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkHtml from 'remark-html';
 
 type Props = {
-  content: string
+  content: string;
 }
 
 const PostBody = ({ content }: Props) => {
+  const [htmlContent, setHtmlContent] = useState('');
+
+  useEffect(() => {
+    unified()
+      .use(remarkParse)
+      .use(remarkHtml)
+      .process(content)
+      .then(file => {
+        setHtmlContent(String(file));
+      })
+      .catch(error => console.error('Error processing markdown:', error));
+  }, [content]);
+
   return (
     <div className="max-w-2xl mx-auto">
-      <ReactMarkdown 
-        className={markdownStyles['markdown']} 
-        children={content} 
-        components={{
-          h1: ({node, ...props}) => <h1 className="text-4xl mt-12 mb-6 leading-tight" {...props} />,
-          h2: ({node, ...props}) => <h2 className="text-3xl mt-12 mb-4 leading-snug" {...props} />,
-          // Add similar components for h3, h4, etc. if needed
-        }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
-  )
+  );
 }
 
 export default PostBody;
