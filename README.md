@@ -41,6 +41,7 @@ in progress:
 ```
 - fix subheaders, titles markdown
 - full `.mdx` support
+- openapi spec integration
 - threads for blog posts
 - comenting to blog posts
 - blog search - indexed blogs
