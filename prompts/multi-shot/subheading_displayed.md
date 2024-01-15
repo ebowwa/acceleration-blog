@@ -1,10 +1,12 @@
-//prompts/multi-shot/subheading_displayed.md
 
-one_shot:
 ```
+User
+whats my problem here & be concise
+ ```
 i just added `.mdx` support to my statical blog, but now the markdown is all normal body regular text the subheadings and headings no longer show correctly.
 
-- this is a concern because when i write blogs i  ```Utilize ## for secondary headers to effectively structure the content.```
+this is a concern because when i write blogs i  ```Utilize ## for secondary headers to effectively structure the content.``` 
+``````
 ```
 
 ```
