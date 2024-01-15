@@ -7,7 +7,9 @@ i just added `.mdx` support to my statical blog, but now the markdown is all nor
 - this is a concern because when i write blogs i  ```Utilize ## for secondary headers to effectively structure the content.```
 ```
 
-
+""
+I encountered an issue with my blog's formatting after adding `.mdx` support. It seems that the markdown is treating all text as regular body text, which means my headings (like ##) are no longer displaying correctly. This is causing problems with the structure of my content, making it difficult to organize my blogs effectively.
+""
 
 
 Follow Up with failed result:
