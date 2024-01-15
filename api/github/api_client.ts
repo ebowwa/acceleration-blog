@@ -16,6 +16,12 @@ let lastRequestTime: number | null = null;
 // Configurable request interval, could be adjusted for the plugin's needs
 const requestInterval = 60000; // 60 seconds
 
+// Validate the GitHub endpoint to ensure it's a proper path segment
+const isValidGitHubEndpoint = (endpoint: string) => {
+  // Add any specific validations needed for your use case
+  return endpoint.startsWith('/') && !endpoint.includes('..');
+};
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     // Check if enough time has passed since the last request
@@ -26,7 +32,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const { endpoint } = req.query;
     // Validate the endpoint to ensure it's a valid GitHub API endpoint
-    if (!endpoint || typeof endpoint !== 'string' || !endpoint.startsWith('/')) {
+    if (!endpoint || typeof endpoint !== 'string' || !isValidGitHubEndpoint(endpoint)) {
       res.status(400).json({ error: 'Invalid or no GitHub endpoint specified.' });
       return;
     }
@@ -47,7 +53,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Respond with the data from GitHub API
     res.status(200).json(response.data);
   } catch (error: any) {
-    // Improved error handling with more specific error messages
-    res.status(500).json({ error: error.response?.data || error.message || 'An unknown error occurred' });
+    if (axios.isAxiosError(error)) {
+      // Handle network or Axios specific errors
+      const status = error.response?.status || 500;
+      const message = error.response?.data.message || error.message || 'An error occurred with the GitHub API request';
+      res.status(status).json({ error: message });
+    } else {
+      // Handle unexpected errors
+      res.status(500).json({ error: 'An unexpected error occurred' });
+    }
   }
 }
