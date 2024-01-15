@@ -40,6 +40,9 @@ Here are some curl commands for interacting with the API:
 in progress: 
 ```
 - full `.mdx` support
+- fix subheaders, titles markdown
+- threads for blog posts
+- comenting to blog posts
 - blog search - indexed blogs
 - gpt to blogs
 - personal gpt's for pay/usage
