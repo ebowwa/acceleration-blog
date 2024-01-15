@@ -8,6 +8,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@astrojs/mdx": "^2.0.4",
     "@mdx-js/loader": "^3.0.0",
     "@next/mdx": "^14.0.4",
     "classnames": "^2.3.1",
