@@ -1,29 +1,37 @@
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import type PostType from '../../interfaces/post'
+import { useRouter } from 'next/router';
+import ErrorPage from 'next/error';
+import Container from '../../components/container';
+import Header from '../../components/header';
+import PostHeader from '../../components/post-header';
+import Layout from '../../components/layout';
+import { getPostBySlug, getAllPosts } from '../../lib/api';
+import PostTitle from '../../components/post-title';
+import Head from 'next/head';
+import { CMS_NAME } from '../../lib/constants';
+import markdownToHtml from '../../lib/markdownToHtml';
+import type PostType from '../../interfaces/post';
+import { MDXRemote } from 'next-mdx-remote';
+
+// Import custom components for MDX
+import Greeting from '../../components/greetings';
+
+const components = { Greeting }; // Add more custom components as needed
 
 type Props = {
-  post: PostType
-  morePosts: PostType[]
-  preview?: boolean
+  post: PostType;
+  morePosts: PostType[];
+  preview?: boolean;
+  source: any; // Added for MDX source
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
-  const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+export default function Post({ post, morePosts, preview, source }: Props) {
+  const router = useRouter();
+  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
+
   return (
     <Layout preview={preview}>
       <Container>
@@ -41,56 +49,60 @@ export default function Post({ post, morePosts, preview }: Props) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                tags={post.tags} // Replaced author with tags
+                tags={post.tags}
               />
-              <PostBody content={post.content} />
+              {/* Render MDX content directly without PostBody wrapper */}
+              <div className="max-w-2xl mx-auto">
+                <MDXRemote {...source} components={components} />
+              </div>
             </article>
           </>
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 type Params = {
   params: {
-    slug: string
-  }
-}
+    slug: string;
+  };
+};
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
     'slug',
-    'tags', // Fetching tags instead of author
+    'tags',
     'content',
     'ogImage',
     'coverImage',
-  ])
-  const content = await markdownToHtml(post.content || '')
+  ]);
+
+  // Use the updated markdownToHtml function for MDX content processing
+  const mdxSource = await markdownToHtml(post.content || '');
 
   return {
     props: {
       post: {
         ...post,
-        content,
+        content: post.content,
       },
+      source: mdxSource, // Pass the MDX source for rendering
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(['slug']);
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
-  }
+  };
 }
