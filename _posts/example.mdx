@@ -1,6 +1,6 @@
 ---
-title: Welcome to My MDX Example
-excerpt: A brief description of the post.
+title: Enhanced MDX Example
+excerpt: Demonstrating advanced MDX features.
 date: '2024-01-14'
 coverImage:
   url: /path/to/cover-image.jpg
@@ -9,11 +9,40 @@ ogImage:
 author:
   name: Author's Name
   picture: /path/to/author-picture.jpg
-tags: ['tag1', 'tag2', 'tag3']
+tags: ['mdx', 'react', 'nextjs']
 ---
 
-This is a paragraph in standard Markdown. Below is a React component rendered within MDX:
+# Welcome to an Enhanced MDX Example
 
-import Greeting from '../components/Greeting';
+This is an **MDX** document showcasing various features.
+
+## React Component
+
+Below is a React component rendered within MDX:
+
+import Greeting from '../components/greetings';
 
 <Greeting />
+
+## Markdown Formatting
+
+*Italic*, **bold**, and `monospace` text styles.
+
+- Bullet list item 1
+- Bullet list item 2
+- Bullet list item 3
+
+1. Ordered list item 1
+2. Ordered list item 2
+3. Ordered list item 3
+
+> This is a blockquote.
+>
+> It spans multiple lines.
+
+## Code Block
+
+```javascript
+function sayHello() {
+  console.log("Hello, MDX!");
+}
