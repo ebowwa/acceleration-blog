@@ -1,4 +1,3 @@
-import { json } from 'express';
 
 const openApiSpec = {
   openapi: "3.0.0",
@@ -141,7 +140,6 @@ const openApiSpec = {
   }
 };
 
-export default async (req, res) => {
+export default function handler(req, res) {
   res.status(200).json(openApiSpec);
-};
-  
+}
