@@ -51,8 +51,8 @@ export default function Post({ post, morePosts, preview, source }: Props) {
                 date={post.date}
                 tags={post.tags}
               />
-              {/* Render MDX content directly without PostBody wrapper */}
-              <div className="max-w-2xl mx-auto">
+              {/* Apply .markdown class for MDX content */}
+              <div className="markdown max-w-2xl mx-auto">
                 <MDXRemote {...source} components={components} />
               </div>
             </article>
