@@ -14,6 +14,7 @@ import { MDXRemote } from 'next-mdx-remote';
 
 // Import custom components for MDX
 import Greeting from '../../components/greetings';
+import PostBody from '../../components/post-body';
 
 const components = { Greeting }; // Add more custom components as needed
 
@@ -51,9 +52,9 @@ export default function Post({ post, morePosts, preview, source }: Props) {
                 date={post.date}
                 tags={post.tags}
               />
-              {/* Apply .markdown class for MDX content */}
-              <div className="markdown max-w-2xl mx-auto">
-                <MDXRemote {...source} components={components} />
+              <div className="max-w-2xl mx-auto">
+                {/* Render the content using PostBody for consistent styling */}
+                <PostBody content={post.content} />
               </div>
             </article>
           </>
@@ -62,6 +63,7 @@ export default function Post({ post, morePosts, preview, source }: Props) {
     </Layout>
   );
 }
+
 
 type Params = {
   params: {
