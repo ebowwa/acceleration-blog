@@ -31,6 +31,9 @@ const openApiSpec = {
                 }
               }
             }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -57,82 +60,88 @@ const openApiSpec = {
           "200": {
             "description": "List of posts matching the keywords",
             "content": {
-                "application/json": {
-                    "schema": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Post"
-                      }
-                    }
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Post"
                   }
                 }
               }
             }
-          }
-        },
-        "/posts/sorting": {
-          "get": {
-            "summary": "Sort posts",
-            "operationId": "sortPosts",
-            "parameters": [
-              {
-                "name": "sortBy",
-                "in": "query",
-                "description": "Attribute to sort by",
-                "required": true,
-                "schema": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "order",
-                "in": "query",
-                "description": "Order of sorting ('asc' or 'desc')",
-                "required": true,
-                "schema": {
-                  "type": "string",
-                  "enum": ["asc", "desc"]
-                }
-              }
-            ],
-            "responses": {
-              "200": {
-                "description": "List of sorted posts",
-                "content": {
-                  "application/json": {
-                    "schema": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Post"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "components": {
-        "schemas": {
-          "Post": {
-            "type": "object",
-            "properties": {
-              "data": {
-                "type": "object",
-                "description": "Metadata of the post"
-              },
-              "content": {
-                "type": "string",
-                "description": "Content of the post"
-              }
-            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
-    };
-    
-    export default async (req, res) => {
-      res.status(200).json(openApiSpec);
-    };
-    
+    },
+    "/posts/sorting": {
+      "get": {
+        "summary": "Sort posts",
+        "operationId": "sortPosts",
+        "parameters": [
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Attribute to sort by",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "description": "Order of sorting ('asc' or 'desc')",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["asc", "desc"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of sorted posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Post"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  components: {
+    schemas: {
+      Post: {
+        type: "object",
+        properties: {
+          data: {
+            type: "object",
+            description: "Metadata of the post"
+          },
+          content: {
+            type: "string",
+            description: "Content of the post"
+          }
+        }
+      }
+    }
+  }
+};
+
+export default async (req, res) => {
+  res.status(200).json(openApiSpec);
+};
+  
