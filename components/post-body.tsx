@@ -1,31 +1,18 @@
-import { useEffect, useState } from 'react';
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkHtml from 'remark-html';
+import markdownStyles from "./markdown-styles.module.css";
 
 type Props = {
   content: string;
-}
+};
 
 const PostBody = ({ content }: Props) => {
-  const [htmlContent, setHtmlContent] = useState('');
-
-  useEffect(() => {
-    unified()
-      .use(remarkParse)
-      .use(remarkHtml)
-      .process(content)
-      .then(file => {
-        setHtmlContent(String(file));
-      })
-      .catch(error => console.error('Error processing markdown:', error));
-  }, [content]);
-
   return (
     <div className="max-w-2xl mx-auto">
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <div
+        className={markdownStyles["markdown"]}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </div>
   );
-}
+};
 
 export default PostBody;
