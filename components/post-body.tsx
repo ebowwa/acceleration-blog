@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import markdownStyles from './markdown-styles.module.css';
 import Prism from 'react-syntax-highlighter/dist/cjs/prism';
-import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism'; 
+import { materialLight } from 'react-syntax-highlighter/dist/cjs/styles/prism'; 
 
 
 type Props = {
@@ -39,7 +39,7 @@ const PostBody = ({ content }: Props) => {
               </code>
             ) : (
               <Prism // Corrected component name
-              style={oneLight} // Apply the new style here
+              style={materialLight} // Apply the new style here
                 language={className?.replace('language-', '')}
                 PreTag="div" {...props}>
                 {String(children).replace(/\n$/, '')}
