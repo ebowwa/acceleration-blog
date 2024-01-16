@@ -7,27 +7,18 @@ import Layout from '../../components/layout';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import PostTitle from '../../components/post-title';
 import Head from 'next/head';
-import { CMS_NAME } from '../../lib/constants';
-import markdownToHtml from '../../lib/markdownToHtml';
+import PostBody from '../../components/post-body'; // Importing PostBody
 import type PostType from '../../interfaces/post';
-import { MDXRemote } from 'next-mdx-remote';
-
-// Import custom components for MDX
-import Greeting from '../../components/greetings';
-import PostBody from '../../components/post-body';
-
-const components = { Greeting }; // Add more custom components as needed
 
 type Props = {
   post: PostType;
   morePosts: PostType[];
   preview?: boolean;
-  source: any; // Added for MDX source
 }
 
-export default function Post({ post, morePosts, preview, source }: Props) {
+export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter();
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${post.title} | Next.js Blog Example`;
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -52,10 +43,8 @@ export default function Post({ post, morePosts, preview, source }: Props) {
                 date={post.date}
                 tags={post.tags}
               />
-              <div className="max-w-2xl mx-auto">
-                {/* Render the content using PostBody for consistent styling */}
-                <PostBody content={post.content} />
-              </div>
+              {/* Using PostBody to render Markdown content */}
+              <PostBody content={post.content} />
             </article>
           </>
         )}
@@ -64,14 +53,7 @@ export default function Post({ post, morePosts, preview, source }: Props) {
   );
 }
 
-
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function getStaticProps({ params }: Params) {
+export async function getStaticProps({ params }: { params: { slug: string; }; }) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -82,16 +64,9 @@ export async function getStaticProps({ params }: Params) {
     'coverImage',
   ]);
 
-  // Use the updated markdownToHtml function for MDX content processing
-  const mdxSource = await markdownToHtml(post.content || '');
-
   return {
     props: {
-      post: {
-        ...post,
-        content: post.content,
-      },
-      source: mdxSource, // Pass the MDX source for rendering
+      post
     },
   };
 }
