@@ -39,8 +39,7 @@ Here are some curl commands for interacting with the API:
 
 in progress: 
 ```
-- fix subheaders, titles markdown
-- full `.mdx` support
+- full `.mdx` support fix components rendering
 - openapi spec integration
 - threads for blog posts
 - comenting to blog posts
