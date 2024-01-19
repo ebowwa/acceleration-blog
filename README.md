@@ -8,8 +8,9 @@ The blog posts are stored in `/_posts` as Markdown files with front matter suppo
 
 To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
 
-for mdx support we have added `remark-mdx` although we have yet to use it.
-
+```
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">umm.. i can be trusted with a 3D printer. i need a 3D printer <a href="https://t.co/2uxlvdfQaX">pic.twitter.com/2uxlvdfQaX</a></p>&mdash; simulationapi -- e/acc (@innitEBOWWA) <a href="https://twitter.com/innitEBOWWA/status/1748220582792159320?ref_src=twsrc%5Etfw">January 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
 
 ## Curl Commands
 
