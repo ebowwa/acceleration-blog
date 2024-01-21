@@ -50,3 +50,7 @@ in progress:
 - gpt to blogs
 - personal gpt's for pay/usage
 ```
+
+```
+https://github.com/LouisShark/chatgpt_system_prompt
+```
