@@ -9,7 +9,7 @@ const Intro = () => {
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         a mission to learn, build, and grow together with {' '}
-        <Link href="/about"> {/* Update this line */}
+        <Link href="https://ebowwa.vercel.app"> {/* Update this line */}
           <a className="underline hover:text-blue-600 duration-200 transition-colors">
             Elijah
           </a>
