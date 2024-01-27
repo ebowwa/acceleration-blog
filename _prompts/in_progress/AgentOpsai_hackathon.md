@@ -1,5 +1,3 @@
-omit nothing but organize thge following, employee markdown formatting like charts to organize this better
-```
 # GPT Store Hackathon: Build GPTs for the GPT Store
 
 ## Overview
@@ -82,4 +80,4 @@ GPT store is live! Build unique, functional GPTs. The first project with a real-
 - Best Use of AgentOps SDK
 - Best Use of Swarms AI
 - Best Use of Resemble AI
-```
+
